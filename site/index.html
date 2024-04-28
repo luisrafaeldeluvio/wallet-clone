@@ -4,10 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pontano+Sans">
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
   
   <script src="
 https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js
@@ -29,8 +27,7 @@ https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js
                 <p>List of accounts</p>
                 
                 <div class="inline">
-                <p>Cashs</p>
-                <span class="total-cash"></span>
+                <p>Cash<span class="total-cash"></span> </p>
                 <p>ADD ACCOUNT</p>
                 </div>
                 
@@ -44,7 +41,10 @@ https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js
                 <p>Expenses structure</p>
                 <p>THIS MONTH</p>
                 <p><span class="total-cash"></span></p>
-                <canvas id="donut-expense" style="width:100%;max-width:300px"></canvas>
+                <div class="graph-container">
+                    <canvas id="donut-expense" style="width:55%;"></canvas>
+                </div>
+                <p>SHOW MORE</p>
             </div>
         </div>
         
