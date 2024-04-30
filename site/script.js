@@ -1,12 +1,22 @@
 let totalCash = 20.16;
 const currency = "PHP";
 
+document.getElementById("current-page").innerHTML = "Home";
+
 document.addEventListener("DOMContentLoaded", (event) => {
     x = document.getElementsByClassName("total-cash");
     for (var i = 0; i < x.length; i++) {
         x[i].innerText = currency + " " + totalCash;
     };
 });
+
+function toggleMenuOn() {
+    document.getElementById("menu-container").classList.remove("hide");
+}
+
+function toggleMenuOff() {
+    document.getElementById("menu-container").classList.add("hide");
+}
 
 var chrt = document.getElementById("donut-expense").getContext("2d");
       var chartId = new Chart(chrt, {
